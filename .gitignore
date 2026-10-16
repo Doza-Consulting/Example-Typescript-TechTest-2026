@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-lambda/
+.env
+api/data/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!terraform.tfvars.example
+crash.log
+.build/
