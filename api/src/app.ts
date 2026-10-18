@@ -3,6 +3,7 @@ import express, { Express } from "express";
 import { healthRouter } from "./routes/health";
 import { roomsRouter } from "./routes/rooms";
 import { bookingsRouter } from "./routes/bookings";
+import { authRouter } from "./routes/auth";
 import { createStoreFromEnv, Store } from "./store";
 
 /**
@@ -15,6 +16,7 @@ export function createApp(store: Store = createStoreFromEnv()): Express {
   app.use(express.json());
 
   app.use(healthRouter);
+  app.use(authRouter(store));
   app.use(roomsRouter(store));
   app.use(bookingsRouter(store));
 

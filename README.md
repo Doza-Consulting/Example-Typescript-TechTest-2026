@@ -58,6 +58,8 @@ npm run build      # type-check and build api + ui
 |---|---|---|
 | GET | `/health` | ✅ Implemented (reference pattern) |
 | GET | `/rooms` | ✅ Implemented |
+| POST | `/auth/register` | 🔲 Stubbed (`501`) |
+| POST | `/auth/login` | 🔲 Stubbed (`501`) |
 | GET | `/rooms/:id/availability` | 🔲 Stubbed (`501`) |
 | GET | `/bookings` | 🔲 Stubbed (`501`) |
 | POST | `/bookings` | 🔲 Stubbed (`501`) |
@@ -78,7 +80,7 @@ api/src/
 ├── models.ts         Room, GameMaster, Booking types
 ├── seed.ts           seed rooms and game masters
 ├── store/            storage layer: types.ts (interface), sqlite.ts, dynamodb.ts
-├── routes/           one router per resource (health, rooms, bookings)
+├── routes/           one router per resource (health, auth, rooms, bookings)
 └── __tests__/        Jest + supertest tests (health.test.ts is the example)
 ```
 

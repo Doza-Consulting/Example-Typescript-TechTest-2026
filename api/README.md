@@ -55,6 +55,7 @@ api/
     ├── models.ts          Room, GameMaster, Booking types
     ├── seed.ts            seed rooms and game masters
     ├── routes/            one router per resource
+    │   ├── auth.ts
     │   ├── health.ts
     │   ├── rooms.ts
     │   └── bookings.ts
@@ -72,6 +73,8 @@ api/
 |---|---|---|
 | GET | `/health` | ✅ Implemented (reference pattern) |
 | GET | `/rooms` | ✅ Implemented |
+| POST | `/auth/register` | 🔲 Stubbed (`501`) |
+| POST | `/auth/login` | 🔲 Stubbed (`501`) |
 | GET | `/rooms/:id/availability` | 🔲 Stubbed (`501`) |
 | GET | `/bookings` | 🔲 Stubbed (`501`) |
 | POST | `/bookings` | 🔲 Stubbed (`501`) |
