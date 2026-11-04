@@ -1,5 +1,7 @@
 # Escape Queue
 
+> **Taking the technical test?** Start with [HOW-IT-WORKS.md](HOW-IT-WORKS.md).
+
 A full-stack booking app for escape room venues, used as the starting point
 for Doza's paired-programming technical assessment. The aim is to learn how
 you think as an engineer and how you approach problems. You'll be given some
